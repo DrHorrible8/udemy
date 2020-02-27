@@ -1,3 +1,25 @@
+let buttonStart = document.querySelector('#start'),
+	budgetValue = document.querySelector('.budget-value'),
+	daybudgetValue = document.querySelector('.daybudget-value'),
+	levelValue = document.querySelector('.level-value'),
+	expensesValue = document.querySelector('.expenses-value'),
+	optionalExpensesValue = document.querySelector('.optionalexpenses-value'),
+	incomeValue = document.querySelector('.income-value'),
+	monthSavingsValue = document.querySelector('.monthsavings-value'),
+	yearSavingsValue = document.querySelector('.yearsavings-value'),
+	areasExpenses = document.querySelectorAll('.expenses-item'),
+	btnExpenses = document.getElementsByTagName('button')[0],
+	btnOptionalExpenses = document.getElementsByTagName('button')[1],
+	btnCount = document.getElementsByTagName('button')[2],
+	areasOptionalExpenses = document.querySelectorAll('.optionalexpenses-item'),
+	areaIncom = document.querySelector('#income'),
+	areaSavings = document.querySelector('#savings'),
+	areaSum = document.querySelector('#sum'),
+	areaPercent = document.querySelector('#percent'),
+	areaYear = document.querySelector('.year-value'),
+	areaMonth = document.querySelector('.month-value'),
+	areaDay = document.querySelector('.day-value');
+
 let money, time;
 
 function start() {
